@@ -1,0 +1,20 @@
+from random import randint
+print('-' * 20)
+print('ADIVINHAÇÃO')
+print('-' * 20)
+print('Estou pensando em um número entre 0 a 10, tente adivinha-lo!')
+random = randint(0, 10)
+chute = 'chute'
+n = 0
+n1 = 1
+
+while random != chute:
+    chute = int(input('Chute: '.format(n)))
+    if chute == random:
+        print('\033[0;32mParabéns, você ACERTOU!\033[m')
+    else:
+        print('\033[0;31mVocê ERROU!\033[m')
+    n = n + n1
+if n <= 2:
+    print('Você é um ÓTIMO adivinhador!')
+print('Foram necessários \033[0;34m {} \033[mpalpite(s)!'.format(n))
