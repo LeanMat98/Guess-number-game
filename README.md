@@ -1,2 +1,2 @@
 # Guess-number-game
-Guess Number game between 0 to 10.
+O jogo consiste em desafiar o jogador a descobrir em que número a máquina está pensando.
